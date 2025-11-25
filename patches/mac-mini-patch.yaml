@@ -1,0 +1,13 @@
+---
+machine:
+  install:
+    disk: /dev/nvme0n1
+    extensions:
+      - image: ghcr.io/siderolabs/thunderbolt:latest
+  kernel:
+    modules:
+      - name: thunderbolt
+      - name: thunderbolt_net
+  kubelet:
+    extraArgs:
+      rotate-server-certificates: true

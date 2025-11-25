@@ -1,0 +1,13 @@
+---
+machine:
+  install:
+    extraKernelArgs:
+      - talos.network.interface.ignore=enp4s0
+  network:
+    interfaces:
+      - interface: enp68s0
+        addresses:
+          - 192.168.1.223/24
+        routes:
+          - network: 0.0.0.0/0
+            gateway: 192.168.1.1

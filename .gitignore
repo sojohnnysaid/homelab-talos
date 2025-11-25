@@ -1,0 +1,28 @@
+# Talos secrets - DO NOT COMMIT
+talosconfig
+*.key
+
+# Generated configs with embedded secrets
+controlplane.yaml
+worker.yaml
+
+# Cloudflare tunnel credentials and backups
+cloudflared-config-backup.yaml
+*-backup.yaml
+
+# Backup files
+*.backup
+*.bak
+
+# macOS
+.DS_Store
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Private documentation (move sensitive docs here)
+# NETWORK-TROUBLESHOOTING.md can be public - it's educational
