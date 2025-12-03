@@ -6,6 +6,7 @@ machine:
   network:
     interfaces:
       - interface: enp68s0
+        mtu: 9000
         addresses:
           - 192.168.1.162/24
         routes:
